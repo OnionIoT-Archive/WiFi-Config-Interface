@@ -1,0 +1,155 @@
+<html>
+	<head>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="./css/styles.css" rel="stylesheet" /> 
+		<title>Onion WiFi Module</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-onion navbar-fixed-top" role="navigation">
+			<div class="container">
+				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-leaf"></span>&nbsp;Onion<sup><sup>WiFi</sup></sup></a>
+				<ul class="nav navbar-nav pull-right">
+      				<li class="active"><a href="./config.html">Configurations</a></li>
+      				<li><a href="./status.html">Status</a></li>
+      				<li><a href="./login.html">Logout</a></li>
+      			</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="panel panel-onion">
+  				<ul class="list-group">
+					<li class="list-group-item">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="admin" class="col-sm-2 control-label">Admin</label>
+						    	<div class="col-sm-10">
+						      		<input type="text" class="form-control" id="admin" placeholder="Admin" />
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="password" class="col-sm-2 control-label">Password</label>
+						    	<div class="col-sm-10">
+						      		<input type="password" class="form-control" id="password" placeholder="Password" />
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="confirm-password" class="col-sm-2 control-label">Confirm</label>
+						    	<div class="col-sm-10">
+						      		<input type="password" class="form-control" id="confirm-password" placeholder="Password Again" />
+						    	</div>
+						  	</div>
+						</form>
+					</li>
+					<li class="list-group-item">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="ssid" class="col-sm-2 control-label">SSID</label>
+						    	<div class="col-sm-8">
+						      		<select id="ssid" class="form-control">
+										<option>Network 1</option>
+										<option>Network 2</option>
+										<option>Network 3</option>
+										<option>Network 4</option>
+										<option>Network 5</option>
+									</select>
+						    	</div>
+						    	<div class="col-sm-2">
+						    		<button class="btn btn-block btn-onion"><span class="glyphicon glyphicon-refresh"></span></button>
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="encryption" class="col-sm-2 control-label">Encryption</label>
+						    	<div class="col-sm-10">
+						      		<select id="encryption" class="form-control">
+										<option>None</option>
+										<option>WPA or WPA 2</option>
+										<option>WEP</option>
+									</select>
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="password" class="col-sm-2 control-label">Password</label>
+						    	<div class="col-sm-10">
+						      		<input type="password" class="form-control" id="password" placeholder="Password" />
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="dhcp" class="col-sm-2 control-label">DHCP</label>
+						    	<div class="col-sm-10">
+						      		<select id="dhcp" class="form-control">
+										<option>Enable</option>
+										<option>Disable</option>
+									</select>
+						    	</div>
+						  	</div>
+						</form>
+					</li>
+					<li class="list-group-item">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+						    	<label for="serial-configure" class="col-sm-3 control-label">Serial Configure</label>
+						    	<div class="col-sm-9">
+						      		<input type="text" class="form-control" id="serial-configure" placeholder="Serial Configure" />
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="serial-framing-length" class="col-sm-3 control-label">Serial Framing Length</label>
+						    	<div class="col-sm-9">
+						      		<input type="text" class="form-control" id="serial-framing-length" placeholder="Serial Framing Length" />
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="serial-framing-timeout" class="col-sm-3 control-label">Serial Framing Timeout</label>
+						    	<div class="col-sm-9">
+						      		<input type="text" class="form-control" id="serial-framing-timeout" placeholder="Serial Framing Timeout" />
+						    	</div>
+						  	</div>
+							<div class="form-group">
+								<label for="network-mode" class="col-sm-3 control-label">Network Mode</label>
+						    	<div class="col-sm-9">
+						      		<select id="network-mode" class="form-control">
+										<option>Client</option>
+										<option>Server</option>
+									</select>
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="remote-server" class="col-sm-3 control-label">Remote Server</label>
+						    	<div class="col-sm-9">
+						      		<input type="text" class="form-control" id="remote-server" placeholder="Remote Server (URL or IP)" />
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="remote-port" class="col-sm-3 control-label">Remote Port</label>
+						    	<div class="col-sm-9">
+						      		<input type="text" class="form-control" id="remote-port" placeholder="Remote Port" />
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="protocol" class="col-sm-3 control-label">Protocol</label>
+						    	<div class="col-sm-9">
+						      		<select id="protocol" class="form-control">
+										<option>TCP</option>
+										<option>UDP</option>
+									</select>
+						    	</div>
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="network-timeout" class="col-sm-3 control-label">Network Timeout</label>
+						    	<div class="col-sm-9">
+						      		<input type="text" class="form-control" id="network-timeout" placeholder="Network Timeout" />
+						    	</div>
+						  	</div>
+						</form>
+					</li>
+				</ul>
+				<div class="panel-footer">
+					<button class="btn btn-onion pull-right">Save Configurations</button>
+					<button class="btn btn-default">Revert Changes</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

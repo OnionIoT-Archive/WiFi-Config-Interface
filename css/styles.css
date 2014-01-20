@@ -1,0 +1,119 @@
+body {
+	padding-top: 70px;
+	background-color: #f7f8fa;
+	color: #4d4d4d;
+}
+
+.container {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.navbar-onion {
+	background-color: #313338;
+	color: rgba(255, 255, 255, 0.5);
+	border: none;
+}
+
+.navbar-onion a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-onion a:hover,
+.navbar-onion a:active,
+.navbar-onion a:focus {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-nav a {
+	height: 52px;
+	line-height: 52px;
+}
+
+.navbar-nav a:hover, .navbar-nav li.active a {
+	box-shadow: inset 0 2px 0 #7a869c;
+	background-color: #313338!important;
+}
+
+.panel-onion {
+	border: 1px solid #d2d3d6;
+	border-top: 2px solid #7a869c;
+	box-shadow: none;
+}
+
+.panel-onion > .panel-body,
+.panel-onion .list-group-item,
+.panel-onion > .panel-footer {
+	padding: 30px;
+}
+
+.panel-onion *:last-child {
+	margin-bottom: 0;
+}
+
+.alert-onion-warning {
+	background-color: #f2b154;
+	border: 1px solid #efa131;
+	color: #fff;
+}
+
+.alert-onion-warning .close {
+	opacity: 0.5;
+}
+
+.form-group:last-child {
+	margin-bottom: 0;
+}
+
+.form-control {
+	color: #4d4d4d;
+	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.015)!important;
+	box-shadow: inset 0 1px 0 rgba(0,0,0,.015)!important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+	border-color: #7a869c;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+	outline: 0 none;
+}
+
+.btn-onion {
+	background-color: #667ea3;
+	border: 1px solid #42536d;
+	color: #fff;
+}
+
+.btn-onion:hover,
+.btn-onion:active,
+.btn-onion:focus {
+	color: #fff;
+	background-color: #556b8d;
+}
+
+table h4 {
+	margin-top: 5px;
+}
+
+.label-online {
+	background-color: #85c744;
+}
+
+.label-offline {
+	background-color: #e74c3c;
+}
